@@ -1,0 +1,14 @@
+dnd project
+    dnd tavern(project folder)
+    migrations
+    templates
+        base.html
+        character_form.html
+        character_list.html
+    models.py
+    forms.py
+    urls.py
+    views.py
+    DNDTavern 
+        settings.py
+        urls.py
