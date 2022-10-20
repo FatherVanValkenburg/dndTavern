@@ -13,6 +13,7 @@
     {% else %}
     <p>Age: apprentice {{ hero.age }}</p>
     {% endif %}
+    <p>User: {{hero.user}} </p>
   </div>
   <div class="card-action">
     <a href="{% url 'hero_Update' hero.id %}">Edit</a>
