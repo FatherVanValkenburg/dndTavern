@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ug5b@(7x^li6f8kjwjbw_12o$)dn5f=mol+3%9g(l!qn$g)*mb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG') == 'True' 
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = []
 
@@ -68,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DNDTavern.wsgi.application'
+WSGI_APPLICATION = 'DNDTavernn.wsgi.application'
 
 
 # Database
@@ -129,3 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/heroes/'
 LOGOUT_REDIRECT_URL = '/'
 
+import django_heroku
+django_heroku.settings(locals())
