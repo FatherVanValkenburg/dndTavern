@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Adventurer List</h1>
+
+{% for heroes in hero %}
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ hero.name }}</span>
+    <p>Job: {{ hero.job }}</p>
+    <p>Description: {{ hero.description }}</p>
+    <p>Age: {{ hero.age }}</p>
+    <p>Race: {{hero.race}}</p>
+  </div>
+</div>
+{% endfor %} {% endblock %}

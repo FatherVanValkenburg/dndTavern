@@ -11,4 +11,3 @@ dnd project
     views.py
     DNDTavern 
         settings.py
-        urls.py
