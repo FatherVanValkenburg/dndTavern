@@ -14,6 +14,10 @@
     <p>Age: apprentice {{ hero.age }}</p>
     {% endif %}
   </div>
+  <div class="card-action">
+    <a href="{% url 'hero_Update' hero.id %}">Edit</a>
+    <a href="{% url 'hero_Delete' hero.id %}">Delete</a>
+  </div>
 </div>
 
 {% endblock %}
